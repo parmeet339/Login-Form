@@ -1,0 +1,225 @@
+  <!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![ENDif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![ENDif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![ENDif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![ENDif]-->
+<head>
+<title>Login form</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bootstrap form validation</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+<div class="col-lg-9">
+          <br>
+ <br>
+
+  <form class="form-horizontal" action=" " method="post"  id="reg_form" name="reg_form" autocomplete="off">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend> Personal Information </legend>
+    
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="first_name" id="first_name" placeholder="First Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label" >Last Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" id="last_name" placeholder="Last Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+    
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Phone #</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone"  id="phone" placeholder="+91-" class="form-control" type="number">
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Address</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="address" placeholder="Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">City</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="city" placeholder="city" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Select Basic -->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">State</label>
+        <div class="col-md-6 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="state" class="form-control selectpicker" >
+              <option value=" " >Please select your state</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option >Assam</option>
+              <option >Bihar</option>
+              <option >Chhattisgarh</option>
+              <option >Goa</option>
+              <option >Gujarat</option>
+              <option >Haryana</option>
+              <option >Himachal Pradesh </option>
+              <option> Jammu and Kashmir</option>
+              <option >Jharkhand</option>
+              <option >Karnataka</option>
+              <option >Kerala</option>
+              <option >Madhya Pradesh</option>
+              <option >Maharashtra</option>
+              <option >Manipur</option>
+              <option> Meghalaya</option>
+              <option >Mizoram</option>
+              <option >Nagaland</option>
+              <option>Odisha</option>
+              <option >Punjab</option>
+              <option> Rajasthan</option>
+              <option >Sikkim</option>
+              <option >Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttarakhand </option>
+              <option>Uttar Pradesh</option>
+              <option>West Bengal</option>
+             </select>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Zip Code</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+        <!-- Text area -->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">About </label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="About "></textarea>
+          </div>
+        </div>
+      </div>
+      
+     
+       </fieldset>
+        <legend> Account information </legend>
+        <fieldset>
+        <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+    
+        <div class="form-group has-feedback">
+            <label for="password"  class="col-md-4 control-label">
+                    Password
+                </label>
+                <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control" id="userPw" type="password" placeholder="password" 
+                       name="password" data-minLength="5"
+                       data-error="some error"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+                </div>
+             </div>
+        </div>
+     
+        <div class="form-group has-feedback">
+            <label for="confirmPassword"  class="col-md-4 control-label">
+                   Confirm Password
+                </label>
+                 <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password" 
+                       name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                       data-match-error="some error 2"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+             </div>
+             </div>
+        </div>
+
+        <div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="agree" value="agree"
+                        data-fv-notempty="true"
+                        data-fv-notempty-message="You must agree with the terms and conditions" /> Agree with the terms and conditions
+                </label>
+            </div>
+        </div>
+    </div>
+     
+  
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+
+</body>
+</html>
