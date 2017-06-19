@@ -14,6 +14,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+   body { background: bisque !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+
+   h1{
+    padding-left: 40%;
+    color: darkred;
+   }
+</style>
 </head>
 
 <body>
@@ -127,8 +136,23 @@
         </div>
       </div>
       
+
+
+ <div class="form-group">
+        <label class="col-md-4 control-label">Country</label>
+        <div class="col-md-6 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select class="form-control" name="countrySelectBox">
+             <option value=" " >Please select your Country</option>
+              <option value="IN">India</option>
+              </select>
+        </div>
+    </div>
+
       <!-- Text input-->
-      
+      <br>
+      <br>
+      <br>
       <div class="form-group">
         <label class="col-md-4 control-label">Zip Code</label>
         <div class="col-md-6  inputGroupContainer">
@@ -253,7 +277,7 @@
 
                 }
             },
-             last_name: {
+   last_name: {
                 validators: {
                         stringLength: {
                         min: 3,
@@ -270,7 +294,7 @@
                 }
             },
            
-            phone: {
+  phone: {
                 validators: {
                    stringLength: {
                         min: 10,
@@ -287,7 +311,7 @@
                     
                 }
             },
-            address: {
+   address: {
                 validators: {
                      stringLength: {
                         min: 8,
@@ -301,7 +325,7 @@
                     }
                 }
             },
-            city: {
+   city: {
                 validators: {
                      stringLength: {
                         min: 4,
@@ -316,29 +340,35 @@
 
                 }
             },
-            state: {
-                validators: {
+    state: {
+               validators: {
                     notEmpty: {
                         message: 'Please select your state'
                     }
                 }
             },
-            zip: {
+   countrySelectBox: {
                 validators: {
-                     stringLength: {
-                        min: 6,
-                        max: 6,
-                        message: 'Enter only 6 digit postal code'
-                    },
                     notEmpty: {
-                        message: 'Please supply your zip code'
-                    },
-                    zipCode: {
-                        country: 'IN'
-                        //message: 'Please supply a vaild zip code'
+                        message: 'Please select your Country'
                     }
                 }
             },
+
+
+     zip: {
+                validators: {
+                    
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                   zipCode: {
+                            country: 'countrySelectBox',
+                            message: 'The value is not valid %s postal code'
+                        }
+                }
+            },
+            
     comment: {
                 validators: {
                       stringLength: {
@@ -389,7 +419,7 @@
                     }
             }
         },
-        confirmPassword: {
+   confirmPassword: {
             validators: {
                 identical: {
                     field: 'password',
@@ -397,7 +427,7 @@
                 }
             }
          },
-         agree: {
+    agree: {
                 validators: {
                     notEmpty: {
                         message: 'You must agree with the terms and conditions'
@@ -408,6 +438,10 @@
             
      }
         })
+
+   .on('change', '[name="countrySelectBox"]', function(e) {
+            $('#reg_form').bootstrapValidator('revalidateField', 'zip');
+        });
 });
  </script>
 
