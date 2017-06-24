@@ -138,29 +138,7 @@
       
 
 
- <div class="form-group">
-        <label class="col-md-4 control-label">Country</label>
-        <div class="col-md-6 selectContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-            <select class="form-control" name="countrySelectBox">
-             <option value=" " >Please select your Country</option>
-              <option value="IN">India</option>
-              </select>
-        </div>
-    </div>
-
-      <!-- Text input-->
-      <br>
-      <br>
-      <br>
-      <div class="form-group">
-        <label class="col-md-4 control-label">Zip Code</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-          </div>
-        </div>
-      </div>
+ 
       
         <!-- Text area -->
       
@@ -194,7 +172,7 @@
                 </label>
                 <div class="col-md-6  inputGroupContainer">
                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input class="form-control" id="userPw" type="password" placeholder="password" 
+            <input class="form-control" id="userPw" type="password" placeholder="Password" 
                        name="password" data-minLength="5"
                        data-error="some error"
                        required/>
@@ -210,7 +188,7 @@
                 </label>
                  <div class="col-md-6  inputGroupContainer">
                 <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password" 
+            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm Password" 
                        name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
                        data-match-error="some error 2"
                        required/>
@@ -226,7 +204,7 @@
                 <label>
                     <input type="checkbox" name="agree" value="agree"
                         data-fv-notempty="true"
-                        data-fv-notempty-message="You must agree with the terms and conditions" /> Agree with the terms and conditions
+                        data-fv-notempty-message="You must agree with the terms and conditions" style="font-size: 10px;" /> By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from us and can opt out at any time.
                 </label>
             </div>
         </div>
@@ -237,7 +215,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label"></label>
         <div class="col-md-4">
-          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+          <button type="submit" class="btn btn-primary" >Create Account </button>
         </div>
       </div>
     </fieldset>

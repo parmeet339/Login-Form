@@ -131,6 +131,9 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
+input[type="text"]:hover{
+  border:1px solid #006fc4;
+}
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -2653,6 +2656,7 @@ input[type="search"] {
   position: absolute;
   margin-top: 4px \9;
   margin-left: -20px;
+  font-size: 10px;
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -6755,3 +6759,6 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+input[type="text"]:hover{
+  border:1px solid #006fc4;
+}
